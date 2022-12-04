@@ -1,0 +1,9 @@
+# build files
+x64
+
+# ide files
+.vs
+.vscode
+
+# output files
+snapshot.bin

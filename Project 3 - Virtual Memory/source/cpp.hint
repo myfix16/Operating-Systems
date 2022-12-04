@@ -1,0 +1,11 @@
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define __device__ __location__(device)
+#define __global__ __location__(global)
+#define __host__ __location__(host)
+#define __managed__ __location__(managed)
+#define assert(e) (static_cast<void>(0))
+#define assert(e) ((e) ? static_cast<void>(0) : __assertfail(__ASSERT_STR_HELPER(e), __FILE__, __LINE__, __PRETTY_FUNCTION__, sizeof(char)))
+#define assert(expression) ((void)0)
+#define assert(expression) (void)( (!!(expression)) || (_wassert(_CRT_WIDE(#expression), _CRT_WIDE(__FILE__), (unsigned)(__LINE__)), 0) )

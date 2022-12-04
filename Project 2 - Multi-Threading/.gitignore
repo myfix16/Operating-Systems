@@ -1,0 +1,9 @@
+# ide files
+.vscode
+.vs
+.idea
+
+# build files
+cmake-build-*
+out
+source/hw2
